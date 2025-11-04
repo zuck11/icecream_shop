@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ice Cream Cone Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <h1>Ice Cream Cone Generator</h1>
+      <p>Create the perfect scoop stack by mixing and matching your favorite flavors and toppings.</p>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="controls" aria-labelledby="builder-heading">
+      <h2 id="builder-heading">Build your cone</h2>
+      <form id="builder-form">
+        <fieldset>
+          <legend>Flavors</legend>
+          <div class="options-grid" id="flavor-options"></div>
+        </fieldset>
+        <fieldset>
+          <legend>Toppings</legend>
+          <div class="options-grid" id="topping-options"></div>
+        </fieldset>
+      </form>
+      <p class="tip">Tip: stack as many scoops as you want &mdash; the cone can handle it!</p>
+    </section>
+
+    <section class="preview" aria-live="polite">
+      <h2>Your cone</h2>
+      <div class="cone-stage">
+        <div class="cone-image" id="cone-image">
+          <div class="scoops" id="scoops"></div>
+          <div class="toppings" id="toppings"></div>
+          <div class="cone-base"></div>
+          <p class="empty-state" id="empty-state">Choose some flavors to get started!</p>
+        </div>
+      </div>
+      <div class="selection-summary" id="selection-summary"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Made with sweet creativity. 🍦</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
